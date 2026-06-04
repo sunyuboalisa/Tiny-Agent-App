@@ -10,11 +10,13 @@
     "frontendDist": "../dist"
   },
   "app": {
+    "macOSPrivateApi": true,
     "windows": [
       {
         "title": "tiny-agent",
         "width": 200,
         "height": 200,
+        "titleBarStyle": "Transparent",
         "decorations": false,
         "transparent": true,
         "alwaysOnTop": true,
