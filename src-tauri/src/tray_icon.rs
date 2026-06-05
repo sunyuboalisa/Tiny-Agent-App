@@ -27,6 +27,7 @@ pub fn create_tray(app: &tauri::App) -> Result<(), tauri::Error> {
             _ => {}
         })
         .icon(app.default_window_icon().unwrap().clone())
+        .tooltip("Tiny Agent")
         .menu(&menu)
         .on_menu_event(|app, event| match event.id.as_ref() {
             "quit" => {
